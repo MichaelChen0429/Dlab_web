@@ -75,3 +75,18 @@ body{
 .type1__content{
 	margin-top: 20px;
 }
+.template-change{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.template-style{
+	width: 80%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+.template-style__pic{
+	margin-bottom: 40px;
+}

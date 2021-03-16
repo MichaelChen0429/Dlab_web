@@ -15,7 +15,7 @@
 					<div>
 						<button>刪除</button>
 						<button v-on:click="seen = !seen">編輯</button>
-						<button><i class="bi bi-justify"></i></button>
+						<button><i class="bi bi-list"></i></button>
 					</div>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="edit-background" v-if="seen"></div>
+		<div class="edit-background" v-if="seen" v-on:click="seen = !seen"></div>
 		<div class="edit-wrap" v-if="seen">
 			<div class="edit-block" style="justify-content: flex-end;">
 				<button class="edit-block__button" v-on:click="seen = !seen">取消</button>
@@ -135,6 +135,29 @@
 				</div>
 			</div>
 		</div>
+<!-- 		<div class="edit-wrap">
+			<div class="template-change">
+				<div>樣式選擇</div>
+				<div>
+					<button>取消</button>
+					<button>確認</button>
+				</div>
+			</div>
+			<div class="template-style">
+				<div class="template-style__pic">
+					<img src="tem-pic-example.png" style="width: 464.625px;height: 220.5px">
+				</div>
+				<div class="template-style__pic">
+					<img src="tem-pic-example.png" style="width: 464.625px;height: 220.5px">
+				</div>
+				<div class="template-style__pic">
+					<img src="tem-pic-example.png" style="width: 464.625px;height: 220.5px">
+				</div>
+				<div class="template-style__pic">
+					<img src="tem-pic-example.png" style="width: 464.625px;height: 220.5px">
+				</div>
+			</div>
+		</div> -->
 	</div>
 	<script>
 		var editpage = new Vue({
