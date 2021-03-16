@@ -24,10 +24,15 @@ body{
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .block__icon{
-	width: 5%;
+	width: 6%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.icon-button{
+	background-color: white;
+	border-style: none;
 }
