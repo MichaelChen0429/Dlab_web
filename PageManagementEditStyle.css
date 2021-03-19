@@ -13,6 +13,7 @@ body{
 .add-block{
 	border-style: dashed;
 	border-width: 2px;
+	border-color: #3F5FA5;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -22,6 +23,20 @@ body{
 	margin:20px;
 	display: flex;
 	justify-content: space-between;
+}
+.control_button{
+	padding:2px 12px;
+	border-style: solid;
+	border-radius: 9px; 
+	background-color: #3F5FA5;
+	color: white;
+	/*outline: transparent;*/
+}
+.control_icon{
+	border-style: none;
+	background-color: white;
+	outline: transparent;
+	color: #3F5FA5;
 }
 .edit-background{
 	 position: absolute;
@@ -48,13 +63,6 @@ body{
 	width: 80%;
 	margin-top: 20px;
 }
-.edit-block__button{
-	margin-left: 20px;
-	background-color: #3F5FA5;
-	color: white;
-	border-radius: 9px;
-	border-style: solid;
-}
 .edit-block__input{
 	margin-left: 20px;
 	border-width:1px; 
@@ -63,7 +71,7 @@ body{
 	border-left-style:none;
 	border-right-style:none;
 }
-.edit-block__type1{
+.edit-block__type{
 	width: 95%;
 	margin-left: 20px;
 	border-radius: 9px;
@@ -72,13 +80,16 @@ body{
 	border-width:1px; 
 	padding: 15px;
 }
-.type1__content{
-	margin-top: 20px;
-}
-.template-change{
-	width: 80%;
+.edit-block__type--modify{
 	display: flex;
 	justify-content: space-between;
+}
+#customRange1{
+	margin-left: 20px;
+	width: 300px;
+}
+.type1__content{
+	margin-top: 20px;
 }
 .template-style{
 	width: 80%;
